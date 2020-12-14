@@ -578,7 +578,7 @@ ul {
     animation: anim 20s ease-in-out;
 }
 
-/* @keyframes anim {
+@keyframes anim {
     0% {
         width: 1920px;
         transform: scale(1);
@@ -613,7 +613,7 @@ ul {
         transform: scale(1);
     }
 
-} */
+}
 
 h1 {
     width: 33%;
