@@ -1,11 +1,602 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="ru">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Blanchard — художественная галерея</title>
+    <link rel="stylesheet" href="css/normalize.css">
+    <link rel="stylesheet" href = "https://unpkg.com/simplebar@latest/dist/simplebar.css">
+    <script  src="https://unpkg.com/simplebar@latest/dist/simplebar.min.js"></script> 
+    <link rel="stylesheet" href="css/style.css">
+    <!-- <script src="index.js"></script> -->
 </head>
 <body>
-    
+  <div class="general-container">
+    <header class="header">
+        <nav class="nav-list">
+            <div class="header_top">
+                <div class="header_top_logo">
+                  <img src="img/desktop1920/Лого.svg" alt="Логотип">
+                </div>
+                <div class="header_top-menu">
+                  <ul class="header_top-menu-list">
+                    <li class="header_top-menu-item">
+                        <a href="#about-us" aria-label="Переход к блоку о нас" tabindex="0">О нас</a>
+                    </li>
+                    <li class="header_top-menu-item">
+                        <a href="#gallery" aria-label="Переход к блоку галерея" tabindex="1">Галерея</a>
+                    </li>
+                    <li class="header_top-menu-item">
+                        <a href="#catalog" aria-label="Переход к блоку каталог" tabindex="2">Католог</a>
+                    </li>
+                    <li class="header_top-menu-item">
+                        <a href="#events" aria-label="Переход к блоку событие" tabindex="3">События</a>
+                    </li>
+                    <li class="header_top-menu-item">
+                        <a href="#publication" aria-label="Переход к блоку издание" tabindex="4">Издания</a>
+                    </li>
+                    <li class="header_top-menu-item">
+                        <a href="#project" aria-label="Переход к блоку проекты" tabindex="5">Проекты</a>
+                    </li>
+                    <li class="header_top-menu-item">
+                        <a href="#contacts" aria-label="Переход к блоку контакты" tabindex="6">Контакты</a>
+                    </li>
+                    <li class="header_top-menu-item">
+                        <a href="#" class="header_top_entrance_button" aria-label="Ссылка Вход с личный кабинет" tabindex="7">
+                            <img src="img/desktop1920/entrance.svg">
+                        </a>
+                    </li>
+                  </ul>
+                </div>
+                </div>
+            <div id="header_bottom" class="header_bottom">
+                <ul class="header_bottom_list">
+                    <li class="header_bottom-item">
+                        <a href="#scrollbar" aria-label="Выпадающий список Реализм" tabindex="0">
+                            Реализм
+                            <img class="header_bottom-item_icon" src="img/desktop1920/arrow.png" alt="Стрелочка вниз">
+                        </a>
+                            <div class="header_bottom_scrollbar" id="scrollbar" data-simplebar>
+                                 <p>Тинторетто</p>
+                                 <p>Фридрих</p>
+                                 <p>Леонардо</p>
+                                 <p>Верроккьо</p>
+                                 <p>Тинторетто</p>
+                                 <p>Фридрих</p>
+                                 <p>Леонардо</p>
+                                 <p>Верроккьо</p>
+                                 <p>Верроккьо</p>
+                                 <p>Верроккьо</p>
+                                 <a href="#" aria-label="Выпадающий список Реализм" tabindex="0"> 
+                                <img class="header_bottom-item_icon" src="img/desktop1920/arrow.png" alt="Стрелочка вниз">
+                                </a>
+                            </div>
+                    </li>
+                    <li class="header_bottom-item">
+                        <a href="#scrollbar1" aria-label="Выпадающий список Импрессиолиз" tabindex="1">
+                            Импрессионизм
+                            <img class="header_bottom-item_icon" src="img/desktop1920/arrow.png" alt="Стрелочка вниз">
+                        </a>
+                        <div class="header_bottom_scrollbar1" id="scrollbar1" data-simplebar>
+                                 <p>Тинторетто</p>
+                                 <p>Фридрих</p>
+                                 <p>Леонардо</p>
+                                 <p>Верроккьо</p>
+                                 <p>Тинторетто</p>
+                                 <p>Фридрих</p>
+                                 <p>Леонардо</p>
+                                 <p>Верроккьо</p>
+                                 <p>Верроккьо</p>
+                                 <p>Верроккьо</p>
+                                 <a href="#" aria-label="Выпадающий список  Импрессионизм" tabindex="1"> 
+                                <img class="header_bottom-item_icon" src="img/desktop1920/arrow.png" alt="Стрелочка вниз">
+                                </a>
+                            </div>
+                    </li>
+                    <li class="header_bottom-item">
+                        <a href="#scrollbar2" aria-label="Выпадающий список Постимпрессиолизм" tabindex="2">
+                            Постимпрессионизм
+                            <img class="header_bottom-item_icon" src="img/desktop1920/arrow.png" alt="Стрелочка вниз">
+                        </a>
+                        <div class="header_bottom_scrollbar2" id="scrollbar2" data-simplebar>
+                                 <p>Тинторетто</p>
+                                 <p>Фридрих</p>
+                                 <p>Леонардо</p>
+                                 <p>Верроккьо</p>
+                                 <p>Тинторетто</p>
+                                 <p>Фридрих</p>
+                                 <p>Леонардо</p>
+                                 <p>Верроккьо</p>
+                                 <p>Верроккьо</p>
+                                 <p>Верроккьо</p>
+                                 <a href="#" aria-label="Выпадающий список Постимпрессионизм" tabindex="2"> 
+                                <img class="header_bottom-item_icon" src="img/desktop1920/arrow.png" alt="Стрелочка вниз">
+                                </a>
+                            </div>
+                    </li>
+                    <li class="header_bottom-item">
+                        <a href="#scrollbar3" aria-label="Выпадающий список Авангард" tabindex="3">
+                            Авангард
+                            <img class="header_bottom-item_icon" src="img/desktop1920/arrow.png" alt="Стрелочка вниз">
+                        </a>
+                        <div class="header_bottom_scrollbar3" id="scrollbar3" data-simplebar>
+                                 <p>Тинторетто</p>
+                                 <p>Фридрих</p>
+                                 <p>Леонардо</p>
+                                 <p>Верроккьо</p>
+                                 <p>Тинторетто</p>
+                                 <p>Фридрих</p>
+                                 <p>Леонардо</p>
+                                 <p>Верроккьо</p>
+                                 <p>Верроккьо</p>
+                                 <p>Верроккьо</p>
+                                 <a href="#" aria-label="Выпадающий список Авангард" tabindex="3"> 
+                                <img class="header_bottom-item_icon" src="img/desktop1920/arrow.png" alt="Стрелочка вниз">
+                                </a>
+                            </div>
+                    </li>
+                    <li class="header_bottom-item">
+                        <a href="#scrollbar4" aria-label="Выпадающий список Футуризм" tabindex="4">
+                            Футуризм
+                            <img class="header_bottom-item_icon" src="img/desktop1920/arrow.png" alt="Стрелочка вниз">
+                        </a>
+                        <div class="header_bottom_scrollbar4" id="scrollbar4" data-simplebar>
+                                 <p>Тинторетто</p>
+                                 <p>Фридрих</p>
+                                 <p>Леонардо</p>
+                                 <p>Верроккьо</p>
+                                 <p>Тинторетто</p>
+                                 <p>Фридрих</p>
+                                 <p>Леонардо</p>
+                                 <p>Верроккьо</p>
+                                 <p>Верроккьо</p>
+                                 <p>Верроккьо</p>
+                                 <a href="#" aria-label="Выпадающий список Футуризм" tabindex="4"> 
+                                <img class="header_bottom-item_icon" src="img/desktop1920/arrow.png" alt="Стрелочка вниз">
+                                </a>
+                            </div>
+                    </li>
+                </ul>
+                <form class="header_bottom_search">
+                    <button type="submit" class="header_bottom_search-button"></button>
+                    <input class="header_bottom_search-input" type="search" placeholder="Поиск по сайту">
+                  </form>
+            </div>
+        </nav>
+    </header>
+    <main>
+        <section class="hero">
+            <div class="hero-container">
+                <h1>Прикоснитесь к прекрасному</h1>
+                <div class="hero-container_discription">
+                  Мы вынуждены отталкиваться от того, что реализация намеченных плановых заданий создаёт предпосылки для новых предложений.
+                </div>
+                <button aria-label="Подписаться на рассылку" class="btn hero-button">
+                    Подписаться на рассылку
+                </button>
+            </div>
+        </section>
+        <section class="about-us">
+            <div class="about-us-container">
+            <h2 class="about-us-title" id="about-us">
+                О нас
+            </h2>
+            <div class="about-us-discription">
+                Ясность нашей позиции очевидна: семантический разбор внешних противодействий однозначно определяет каждого участника как способного принимать собственные решения касаемо распределения внутренних резервов и ресурсов. Не следует, однако, забывать, что высококачественный прототип будущего проекта влечет за собой процесс внедрения и модернизации модели развития. Повседневная практика показывает, что высокое качество позиционных исследований создаёт необходимость включения в производственный план целого ряда внеочередных мероприятий с учётом комплекса распределения внутренних резервов и ресурсов. В рамках спецификации современных стандартов, действия представителей оппозиции набирают популярность среди определенных слоев населения, а значит, должны быть разоблачены.
+            </div>
+            </div>
+        </section>
+        <section class="gallery">
+            <div class="gallery-container">
+            <h2 class="gallery_title" id="gallery">
+                Галерея
+            </h2>
+            <p class="galery_filter">
+                Фильтровать по:
+            </p>
+            <select name="select_filter" id="selectFilter">
+                <option value=""></option>
+                <option value=""></option>
+                <option value=""></option>
+                <option value=""></option>
+                <option value=""></option>
+            </select>
+
+            <!-- Слайдер фотографий -->
+            <div class="gallery_foto-list">
+                ...
+            </div>
+
+            <p class="galery_remark">
+                Вам предоставляется 10 бесплатных скачиваний. Для увеличения количества скачиваний <a href="#">авторизуйтесь</a>, либо воспользуйтесь лицензией. 
+            </p>
+            </div>
+        </section>
+        <section class="catalog">
+         <div class="catalog-container">
+            <h2 class="catalog_title" id="catalog">
+                Каталог
+            </h2>
+            <ul class="catalog_country-languagy_list">
+                <li class="catalog_country-languagy_item">
+                    <img src="img/desktop1920/image4.svg" tabindex="0" alt="Французкий">
+                </li>
+                <li class="catalog_country-languagy_item">
+                    <img src="img/desktop1920/image6.svg" tabindex="1" alt="Немецкий">
+                </li>
+                <li class="catalog_country-languagy_item">
+                    <img src="img/desktop1920/image7.svg" tabindex="2" alt="Итальянский">
+                </li>
+                <li class="catalog_country-languagy_item">
+                    <img src="img/desktop1920/image8.svg" tabindex="3" alt="Русский">
+                </li>
+                <li class="catalog_country-languagy_item">
+                    <img src="img/desktop1920/image5.svg" tabindex="4" alt="Бельгийский">
+                </li>
+            </ul>
+            <div class="catalog_discriprion">
+                Акционеры крупнейших компаний, которые представляют собой яркий пример континентально-европейского типа политической культуры, будут объявлены нарушающими общечеловеческие нормы этики и морали. Являясь всего лишь частью общей картины, стремящиеся вытеснить традиционное производство, нанотехнологии и по сей день остаются уделом либералов, которые жаждут быть функционально разнесены на независимые элементы. 
+            </div>
+            <div class="catalog_list">
+                <div id="accordion" class="catalog_list_accordion" aria-selected="false" aria-expanded="false">
+                    <!-- 1 -->
+
+                    <h3 class="catalog_list_accordion_item">C 1400 по 1499 гг.<span></span></h3>
+                        <div class="catalog_list_accordion_item">
+                           <p>
+                               <ul>
+                                   <li></li>
+                                   <li></li>
+                                   <li></li>
+                                   <li></li>
+                                   <li></li>
+                                   <li></li>
+                                   <li></li>
+                                   <li></li>
+                                   <li></li>
+                                   <li></li>
+                                   <li></li>
+                                   <li></li>
+                                   <li></li>
+                                   <li></li>
+                                   <li></li>
+                                   <li></li>
+                                   <li></li>
+                                   <li></li>
+                                   <li></li>
+                                   <li></li>
+                                   <li></li>
+                                   <li></li>
+                                   <li></li>
+                                   <li></li>
+                               </ul>
+                           </p>
+                        </div>
+                    <!-- 2 -->
+
+                    <h3 class="catalog_list_accordion_item">C 1500 по 1599 гг.<span></span></h3>
+                        <div class="catalog_list_accordion_item">
+                           <p>
+
+                           </p>
+                        </div>
+                    <!-- 3 -->
+
+                    <h3 class="catalog_list_accordion_item">C 1600 по 1699 гг.<span></span></h3>
+                        <div class="catalog_list_accordion_item">
+                           <p>
+
+                           </p>
+                        </div>
+                    <!-- 4 -->
+
+                    <h3 class="catalog_list_accordion_item">C 1700 по 1799 гг.<span></span></h3>
+                        <div class="catalog_list_accordion_item">
+                           <p>
+
+                           </p>
+                        </div>
+                    <!-- 5 -->
+
+                    <h3 class="catalog_list_accordion_item">C 1800 по 1899 гг.<span></span></h3>
+                        <div class="catalog_list_accordion_item">
+                           <p>
+
+                           </p>
+                        </div>
+                    <!-- 6 -->
+
+                    <h3 class="catalog_list_accordion_item">C 1900 по 1999 гг.<span></span></h3>
+                        <div class="catalog_list_accordion_item">
+                           <p>
+
+                           </p>
+                        </div>
+                    <!-- 7 -->
+                    <h3 class="catalog_list_accordion_item">C 2000 г.<span></span></h3>
+                        <div class="catalog_list_accordion_item">
+                           <p>
+
+                           </p>
+                        </div>
+                        <div class="catalog_list_accordion_item_discription">
+                            <img src="img/desktop1920/image3.png" tabindex="0" alt="Доменико Гирландайо">
+                            <p>
+                                <span>2 июня 1448 — 11 января 1494.</span>
+                                Один из ведущих флорентийских художников Кватроченто, основатель художественной династии, которую продолжили его брат Давид и сын Ридольфо. Глава художественной мастерской, где юный Микеланджело в течение года овладевал профессиональными навыками. Автор фресковых циклов, в которых выпукло, со всевозможными подробностями показана домашняя жизнь библейских персонажей (в их роли выступают знатные граждане Флоренции в костюмах того времени).
+                            </p>
+                        </div>
+                </div>
+            </div>
+         </div>
+        </section>
+        <section class="events">
+            <div class="events-container">
+                <h2 class="events-container-title" id="events">
+                    События
+                </h2>
+            <article class="events_one">
+                <img src="img/desktop1920/Rectangle101.png" tabindex="0" alt="Картинка">
+                <p>
+                    Музей им. Щусева
+                    с 20 марта по 30 апреля
+                </p>
+                <h4>
+                    Книжная гравюра в живом восприятии
+                </h4>
+                <p>
+                    Один из ведущих флорентийских художников Кватроченто, основатель художественной династии, которую продолжили его брат Давид и сын Ридольфо. Глава художественной мастерской, где юный Микеланджело.
+                </p>
+                <button class="btn events_button">
+                    Подробнее
+                </button>
+            </article>
+            <article class="events_two">
+                <img src="img/desktop1920/Rectangle101(1).png" tabindex="1" alt="Картинка">
+                <p>
+                    ММОМА
+                    24 марта 19:00
+                </p>
+                <h4>
+                    «Открытая дискуссия». Дмитрий Петров и Сергей Ильин.
+                </h4>
+                <p>
+                    Высокий уровень вовлечения представителей целевой аудитории является четким доказательством простого факта: постоянный количественный рост и сфера нашей активности представляет собой интересный эксперимент проверки новых принципов формирования...
+                </p>
+                <button class="btn events_button">
+                    Подробнее
+                </button>
+            </article>
+            <article class="events_tree">
+                <img src="img/desktop1920/Rectangle101(2).png" tabindex="2" alt="Картинка">
+                <p>
+                    Еврейский музей
+                    с 31 марта по 21 апреля
+                </p>
+                <h4>
+                    Выставка «Формация 2020»
+                </h4>
+                <p>
+                    Идейные соображения высшего порядка, а также современная методология разработки играет важную роль в формировании глубокомысленных рассуждений. Также как перспективное планирование играет определяющее значение для новых принципов формирования материально-технической и кадровой базы.
+                </p>
+                <button class="btn events_button">
+                    Подробнее
+                </button>
+            </article>
+            <article class="events_four">
+                <img src="img/desktop1920/Rectangle101(3).png" tabindex="3" alt="Картинка">
+                <p>
+                    ММАМ
+                    с 8 апреля по 20 мая
+                </p>
+                <h4>
+                    Джон Винзор. Фотографии из серии «Метафора серебра»
+                </h4>
+                <p>
+                    Один из ведущих флорентийских художников Кватроченто, основатель художественной династии, которую продолжили его брат Давид и сын Ридольфо. Глава художественной мастерской, где юный Микеланджело.
+                </p>
+                <button class="btn events_button">
+                    Подробнее
+                </button>
+            </article>
+            <article class="events_five">
+                <img src="img/desktop1920/Rectangle101(4).png" tabindex="4" alt="Картинка">
+                <p>
+
+                </p>
+                <h4>
+
+                </h4>
+                <p>
+
+                </p>
+                <button class="btn events_button">
+                    Подробнее
+                </button>
+            </article>
+            <article class="events_six">
+                <img src="img/desktop1920/Rectangle101(1).png" tabindex="5" alt="Картинка">
+                <p>
+                    Третьяковка на Крымском валу
+                    с 30 марта по 30 апреля
+                </p>
+                <h4>
+                    XXIV Международная биеннале молодого искусства
+                </h4>
+                <p>
+                    Внезапно, реплицированные с зарубежных источников, современные исследования представляют собой не что иное, как квинтэссенцию победы маркетинга над разумом и должны быть рассмотрены исключительно в разрезе маркетинговых и финансовых...
+                </p>
+                <button class="btn events_button">
+                    Подробнее
+                </button>
+            </article>
+            </div>
+        </section>
+        <section class="publication">
+            <div class="publication-container">
+                <h2 class="publication-container-title" id="publication">Издания</h2>
+                <div class="publication_checkbox-cast">
+                    <h5 class="checkbox_title">Категории</h5>
+                    <label for="check1" class="label1">
+                        <input type="checkbox" name="check1" id="check1">
+                        Бестселлеры
+                        <span></span>
+                    </label>
+                    <label for="check2" class="label2">
+                        <input type="checkbox" name="check2" id="check2">
+                        Искусство
+                        <span></span>
+                    </label>
+                    <label for="check3" class="label3">
+                        <input type="checkbox" name="check3" id="check3">
+                        Архитектура
+                        <span></span>
+                    </label>
+                    <label for="check4" class="label4">
+                        <input type="checkbox" name="check4" id="check4" checked>
+                        Дизайн
+                        <span></span>
+                    </label>
+                    <label for="check5" class="label5">
+                        <input type="checkbox" name="check5" id="check5">
+                        Мода
+                        <span></span>
+                    </label>
+                    <label for="check6" class="label6">
+                        <input type="checkbox" name="check6" id="check6">
+                        Детям
+                        <span></span>
+                    </label>
+                    <label for="check7" class="label7">
+                        <input type="checkbox" name="check7" id="check7">
+                        Художественная литература
+                        <span></span>
+                    </label>
+                    <label for="check8" class="label8">
+                        <input type="checkbox" name="check8" id="check8">
+                        Публицистика
+                        <span></span>
+                    </label>
+                    <label for="check9" class="label9">
+                        <input type="checkbox" name="check9" id="check9">
+                        Путеволители
+                        <span></span>
+                    </label>
+                    <label for="check10" class="label10">
+                        <input type="checkbox" name="check10" id="check10">
+                        Философия
+                        <span></span>
+                    </label>
+                    <label for="check11" class="label11">
+                        <input type="checkbox" name="check11" id="check11">
+                        Учебная литература
+                        <span></span>
+                    </label>
+                    <label for="check12" class="label12">
+                        <input type="checkbox" name="check12" id="check12">
+                        Журналы и газеты
+                        <span></span>
+                    </label>
+                </div>
+                <form action="" class="publication_price">
+                    <!-- 1 -->
+                    <input type="text" placeholder="От" class="publication_price_item">
+                    <!-- 2 -->
+                    <input type="text" placeholder="50" class="publication_price_item">
+                    <!-- 3 -->
+                    <input type="text" placeholder="до" class="publication_price_item">
+                    <!-- 4 -->
+                    <input type="text" placeholder="25 000" class="publication_price_item">
+                    <!-- 5 -->
+                    <input type="text" placeholder="рублей" class="publication_price_item">
+                </form>
+
+                <!-- Слайдер Издания -->
+                <div class="publication_catalog-goods">
+                    ...
+                </div>
+            </div>
+        </section>
+        <section class="project">
+            <div class="project-container">
+                <h2 class="project-title" id="project">
+                    Проекты
+                </h2>
+                <p>Предварительные выводы: постоянное информационно-пропагандистское обеспечение нашей деятельности однозначно фиксирует необходимость своевременного выполнения сверхзадачи. А ещё независимые государства смешаны с не уникальными данными до степени совершенной неузнаваемости, из-за чего возрастает их статус бесполезности. Прежде всего, постоянное информационно-пропагандистское<img src="img/desktop1920/i-Тултип.svg" class="project_i-image" alt="Восклицателный знак"> обеспечение нашей деятельности однозначно фиксирует необходимость экономической целесообразности принимаемых решений. И нет сомнений, что действия представителей оппозиции могут быть рассмотрены<img src="img/desktop1920/i-Тултип.svg" class="project_i-image" alt="Восклицателный знак"> исключительно в разрезе маркетинговых и финансовых<img src="img/desktop1920/i-Тултип.svg" class="project_i-image" alt="Восклицателный знак"> предпосылок. Банальные, но неопровержимые выводы, а также представители современных социальных резервов призывают нас к новым свершениям, которые, в свою очередь, должны быть смешаны с не уникальными данными до степени совершенной неузнаваемости. Подробнее: <a href="blanchard-art.ru/projects/about" aria-label="Подробнее по ссылке" tabindex="0" class="project_link">blanchard-art.ru/projects/about</a></p>
+            </div>
+            <h3 class="project_partners">
+                Партнеры проектов:
+            </h3>
+            <!-- Слайдер с партнерами -->
+            ...
+
+
+        </section>
+        <section class="contacts">
+            <h2 class="contacts-title" id="contacts">Контакты</h2>
+            <div class="contacts-container">
+                <div class="contacts_list1">
+                <h3 class="contacts_center-title">
+                    Шоурум №4
+                </h3>
+                <address>
+                    Леонтьевский переулок, дом 5, строение 1
+                </address>
+                <form class="contacts_form" action="https://jsonplaceholder.typicode.com/posts,https://postman-echo.com/post" autocomplete="on" method="POST">
+                    <input class="contacts_form_item name" type="text" name="имя" placeholder="Имя*">
+                    <input class="contacts_form_item phone" type="tel" name="tel" placeholder="Телефон*">
+                        <button aria-label="Заказать" class="contacts_form_btn btn" type="submit">
+                        Заказать   
+                        </button>
+                </form>
+                <div class="contacts_messenger">
+                    <h3 class="contacts_messenger_title">
+                        Связаться в один клик
+                    </h3>
+                    <ul class="contacts_messenger-list">
+                        <li class="contacts_messenger-list_item">
+                            <a href="#" class="link1">
+                                <img src="img/desktop1920/Whatsapp-Icon.svg" alt="Ватсап">
+                            </a>
+                        </li>
+                        <li class="contacts_messenger-list_item">
+                            <a href="#" class="link2">
+                                <img src="img/desktop1920/Telegram_2019_Logo.svg" alt="Телеграм">
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+                </div>
+                    <!-- Яндекс карта -->
+                <div id="map" class="contacts_list2"></div>
+                    ...
+
+
+            </div>
+        </section>
+    </main>
+    <footer>
+        <div class="footer-container">
+            <img src="img/desktop1920/Лого.svg" alt="Логотип">
+            <ul class="footer_link-list">
+                <li class="footer_link-item">
+                    <a href="#" class="link-vk">
+                        <img src="img/desktop1920/vk.svg" alt="Вконтаке">
+                    </a>
+                </li>
+                <li class="footer_link-item">
+                    <a href="#" class="link-vk">
+                        <img src="img/desktop1920/instagram.svg" alt="Инстаграм">
+                    </a>
+                </li>
+                <li class="footer_link-item">
+                    <a href="#" class="link-vk">
+                        <img src="img/desktop1920/fb.svg" alt="Фейсбук">
+                    </a>
+                </li>
+            </ul>
+        </div>
+    </footer>
+  </div>
 </body>
 </html>
