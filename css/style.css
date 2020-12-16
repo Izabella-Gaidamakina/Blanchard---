@@ -193,7 +193,7 @@ ul {
   .header_bottom::before {
     content: '';
     position: absolute;
-    width: 1895px;
+    width: 1920px;
     height: 70px;
     left: 0px;
     top: 100px;
@@ -250,104 +250,6 @@ ul {
     margin-top: -2px;
     padding-left: 3px;
     text-align: center;
-  }
-
-  .header_bottom_search {
-    position: absolute;
-    height: 34px;
-    width: 266px;
-    right: 127px;
-    margin-top: 23px;
-    padding: 0 2px 4px 0;
-    z-index: 2;
-  }
-
-  /* #form-search {
-    border: 1px solid white;
-  } */
-  
-  form:focus {
-    border: 2px solid #7943A4;
-  }
-
-  form:hover {
-    border: 2px solid #7943A4;
-  }
-
-  .header_bottom_search-button {
-    position: absolute;
-    width: 22px;
-    height: 22px;
-    top: 2px;
-    right: 237px;
-    background-repeat: no-repeat;
-    background-position: center;
-    border: none;
-    background-color: transparent;
-    text-align: center;
-    cursor: pointer;
-  }
-
-.header_bottom_search input {
-    margin-right: 134px;
-    margin-left: 37px;
-    padding: 3px 26px 4px 0px;
-    color: #FFFFFF;
-    background:  none;
-    border-right: none;
-    border-top: none;
-    border-left: none;
-    border-bottom: 1px solid #FFFFFF;
-  }
-
-  .header_bottom_search input:hover {
-    border-bottom: 1px solid #C283F3;
-    cursor: pointer;
-  }
-
-  .header_bottom_search input:active {
-    color: #C283F3;
-    cursor: pointer;
-  }
-
-  .header_bottom_search-button:hover path {
-    fill: #C283F3;
-    cursor: pointer;
-  }
-
-  .header_bottom_search-button:active path
-  .header_bottom_search input:active {
-    fill: #C283F3;
-    color: #C283F3;
-  }
-
-  .header_bottom_search-button:hover rect {
-    fill: #C283F3;
-    cursor: pointer;
-  }
-
-  .header_bottom_search-button:active rect {
-    fill: #C283F3;
-  }
-
-
-  input::-webkit-input-placeholder {
-    color: #FFFFFF;
-    font-weight: 400;
-    font-size: 18px;
-    line-height: 25px;
-  }
-  input:-moz-placeholder {
-    color: #FFFFFF;
-    font-weight: 400;
-    font-size: 18px;
-    line-height: 25px;
-  }
-  input:-ms-input-placeholder {
-    color: #FFFFFF;
-    font-weight: 400;
-    font-size: 18px;
-    line-height: 25px;
   }
 
   /* Скролл для нижнего меню */
@@ -812,6 +714,103 @@ ul {
     filter: grayscale(1);
 }
 
+
+  /* #form-search {
+    border: 1px solid white;
+  } */
+
+  form:focus {
+    border: 2px solid #7943A4;
+  }
+
+  form:hover {
+    border: 2px solid #7943A4;
+  }
+
+  .header_bottom_search {
+    position: absolute;
+    height: 34px;
+    width: 266px;
+    right: 152px;
+    margin-top: 23px;
+    padding: 0 2px 4px 0;
+    z-index: 2;
+  }
+
+  .header_bottom_search-button {
+    position: absolute;
+    width: 22px;
+    height: 22px;
+    top: 2px;
+    right: 237px;
+    background-repeat: no-repeat;
+    background-position: center;
+    border: none;
+    background-color: transparent;
+    text-align: center;
+    cursor: pointer;
+  }
+
+.header_bottom_search input {
+    margin-right: 134px;
+    margin-left: 37px;
+    padding: 3px 26px 4px 0px;
+    color: #FFFFFF;
+    background:  none;
+    border-right: none;
+    border-top: none;
+    border-left: none;
+    border-bottom: 1px solid #FFFFFF;
+  }
+
+  .header_bottom_search input:hover {
+    border-bottom: 1px solid #C283F3;
+    cursor: pointer;
+  }
+
+  .header_bottom_search input:active {
+    color: #C283F3;
+    cursor: pointer;
+  }
+
+  .header_bottom_search-button:hover path {
+    fill: #C283F3;
+    cursor: pointer;
+  }
+
+  .header_bottom_search-button:active path
+  .header_bottom_search input:active {
+    fill: #C283F3;
+    color: #C283F3;
+  }
+
+  .header_bottom_search-button:hover rect {
+    fill: #C283F3;
+    cursor: pointer;
+  }
+
+  .header_bottom_search-button:active rect {
+    fill: #C283F3;
+  }
+
+  input::-webkit-input-placeholder {
+    color: #FFFFFF;
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 25px;
+  }
+  input:-moz-placeholder {
+    color: #FFFFFF;
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 25px;
+  }
+  input:-ms-input-placeholder {
+    color: #FFFFFF;
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 25px;
+  }
 /* Body */
 
 
@@ -827,7 +826,7 @@ ul {
 
 .hero-animation_image {
   position: absolute;
-  width: 1895px;
+  width: 1920px;
   height: 700px;
   top: 100px;
   left: 0;
