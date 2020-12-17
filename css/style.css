@@ -57,10 +57,7 @@ html body {
   }
 
 .general-container {
-    max-width: 1920px;
     background: #FFFFFF;
-    margin: 0 auto;
-    margin: 0 160px;
   }
 
 h2 {
@@ -114,15 +111,8 @@ ul {
     background-color: #9D5CD0;
 }
 
-  .nav-list {
-    margin: 0 -160px 0 -160px;
-  }
-
-  .header {
-      max-width: 1600px;
-  }
-
   .header_top{
+    max-width: 1920px;
     display: flex;
     justify-content: right;
     padding: 30px 160px 27px 160px;
@@ -185,8 +175,10 @@ ul {
 }
 
   .header_bottom {
+    max-width: 1920px;
     display: flex;
     justify-content: space-between;
+    padding: 0 160px;
     background-color: rgba(255,255,255,0.4);
   }
 
@@ -204,7 +196,7 @@ ul {
   .header_bottom_list {
     display: flex;
     justify-content: flex-start;
-    padding: 23px 160px 22px 160px;
+    padding: 23px 0px 22px 0px;
     margin-left: -2px;
     font-size: 18px;
     line-height: 25px;
@@ -815,7 +807,7 @@ ul {
 
 
 .hero-animation {
-  width: 1920px;
+  max-width: 1920px;
   overflow: hidden;
 }
 
@@ -824,72 +816,68 @@ ul {
   animation: anim 20s ease-in-out;
 } */
 
+.hero-animation_image-container {
+  max-width: 100%;
+  overflow: hidden;
+}
+
 .hero-animation_image {
+  max-width: 100%;
   position: absolute;
   width: 1920px;
   height: 700px;
   top: 100px;
   left: 0;
-  overflow: hidden;
+  background: url(../img/birmingham-museums-trust-MK_98NuC4-4-unsplash2.png) center no-repeat;
+  animation: anim 25s ease-in-out;
 }
 
-.hero-animation_image img {
-  transition: transform 15s;
-}
-.hero-animation_image img:hover {
+/* .hero-animation_image:hover {
    transform: scale(1.5);
-}
+} */
 
 .hero-container {
-width: 1800px;
-position: absolute;
-top: 96px;
-left: 157px;
-  /* margin: -70px -160px 0 -160px;
-  padding: 96px 0 120px 160px; */
-  color: #FFFFFF;
-  z-index: 1;
+max-width: 1920px;
+position: relative;
+padding: 26px 160px 120px 160px;
+color: #FFFFFF;
 }
-/* 
+
 @keyframes anim {
     0% {
-        width: 1920px;
-        transform: scale(1);
-    }
-
-    25% {
-        width: 1915px;
-        margin-left: 15px;
-        margin-top: -1px;
-        padding-bottom: 115px;
-        transform: scale(1.2);
+      margin-left: 0;
+      margin-top: 0;
+      transform: scale(1);
     }
 
     50% {
-        width: 1920px;
-        margin-left: 25px;
-        margin-top: 33px;
-        padding-bottom: 110px;
-        transform: scale(1.3);
+      margin-left: -95px;
+      margin-top: 35px;
+      transform: scale(1.1);
     }
 
-    75% {
-        width: 1915px;
-        margin-left: 15px;
-        margin-top: -1px;
-        padding-bottom: 115px;
-        transform: scale(1.2);
-    }
+    /* 50% {
+      margin-left: -190px;
+      margin-top: 70px;
+        transform: scale(1.1);
+    } */
+
+    /* 75% {
+      margin-left: -98px;
+      margin-top: 35px;
+        transform: scale(1.1);
+    } */
 
     100% {
-        width: 1920px;
-        transform: scale(1);
+      margin-left: 0px;
+      margin-top: 0px;
+      transform: scale(1);
     }
 
-} */
+}
 
 h1 {
-    width: 33%;
+    width: 44%;
     margin-left: -1;
     font-weight: 700;
     font-size: 72px;
@@ -898,7 +886,7 @@ h1 {
 }
 
 .hero-container_discription {
-    width: 34%;
+    width: 33%;
     margin-top: -30px;
     margin-bottom: 92px;
     font-weight: 700;
@@ -929,14 +917,16 @@ h1 {
 }
 
 
-.section-after-animation {
+/* .section-after-animation {
   position: relative;
-  top: 631px;
-  left: -2px;
-}
+  padding: 631px 0 0 0;
+  margin-left: -2px;
+} */
 
 .about-us-container {
-    width: 68%;
+    max-width: 1600px;
+    width: 75%;
+    padding: 0 160px;
 }
 
 .about-us-discription {
