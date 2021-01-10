@@ -47,18 +47,18 @@ $(document).click( function(event){
 	$(".list").slideUp("slow");
 	event.stopPropagation();
 });
-$('.header_bottom-link').click( function() {
+$('.header-bottom__link').click( function() {
 		$(this).siblings(".list").slideToggle("slow");
 		return false;
   });
   
   $(document).click( function(event){
-    if( $(event.target).closest(".list_scrollbar").length ) 
+    if( $(event.target).closest(".header-bottom__list-scrollbar").length ) 
     return;
-    $(".list_scrollbar").slideUp("slow");
+    $(".header-bottom__list-scrollbar").slideUp("slow");
     event.stopPropagation();
   });
-  $('.header_bottom-link').click( function() {
-      $(this).siblings(".list_scrollbar").slideToggle("slow");
+  $('.header-bottom__link').click( function() {
+      $(this).siblings(".header-bottom__list-scrollbar").slideToggle("slow");
       return false;
     });
