@@ -117,20 +117,21 @@ ul {
 }
 
   .header-top{
-    max-width: 1920px;
+    max-width: 1630px;
     display: flex;
     justify-content: right;
     margin: 0 auto;
-    padding: 30px 15px 27px 15px;
+    padding: 0 15px;
     background: #000000;
   }
 
   .header-top__logo {
-    margin-left: 145px;
-    margin-right: 179px;
+    padding: 30px 179px 27px 10px;
+    /* margin-right: 179px; */
   }
 
   .header-top__menu{
+    padding: 37px 265px 0 0;
     display: flex;
     justify-content: space-between;
     font-weight: 600;
@@ -142,59 +143,47 @@ ul {
   .header-top__list {
     display: flex;
     justify-content: space-between;
-    padding-top: 8px;
     text-align: center;
   }
 
-  .header-top__item {
-    padding-left: 62px;
+  .header-top__item:not(:last-child) {
+    margin-right: 64px;
   }
 
-  .header-top__item:first-child {
-      margin-left: -42px;
-      padding-left: 0px;
-  }
-
-  .header-top__item:nth-child(5) {
-    padding-left: 65px;
+.header-top__entrance {
+  display: flex;
+  justify-content: flex-end;
+  padding-top: 37px;
+  margin: 0;
 }
 
-.header-top__item:nth-child(6) {
-  padding-left: 65px;
-}
-
-.header-top__item:last-child {
-  position: absolute;
-  left: 1625px;
-}
-
-.header-top__entrance:hover path {
+.header-top__entr-link:hover path {
   outline: 1px solid #7943A4;
 }
 
-.header-top__entrance:hover path {
+.header-top__entr-link:hover path {
   fill: #C283F3;
 }
 
-.header-top__entrance:active path {
+.header-top__entr-link:active path {
   fill: #9D5CD0;
 }
 
   .header-bottom {
-    max-width: 1920px;
+    max-width: 1630px;
     display: flex;
     justify-content: space-between;
     margin: 0 auto;
-    padding: 0 15px;
+    /* padding: 0 15px; */
     background-color: rgba(255,255,255,0.4);
   }
 
   .header-bottom::before {
     content: '';
     position: absolute;
-    width: 1895px;
+    width: 1630px;
     height: 70px;
-    left: 0px;
+    right: auto;
     top: 100px;
     background-color: rgba(0, 0, 0, 0.4);
     z-index: 1;
@@ -203,7 +192,7 @@ ul {
   .header-bottom__list {
     display: flex;
     justify-content: flex-start;
-    padding: 23px 0px 22px 145px;
+    padding: 23px 305px 22px 27px;
     margin-left: -2px;
     font-size: 18px;
     line-height: 25px;
@@ -211,8 +200,9 @@ ul {
     z-index: 2;
   }
 
-  .header-bottom__item {
-    padding-left: 96px;
+  .header-bottom__item:not(:last-child) {
+    margin-right: 90px;
+    letter-spacing: 1px;
   }
 
   .header-bottom__item a:hover {
@@ -233,23 +223,11 @@ ul {
     cursor: pointer;
   }
 
-  .header-bottom__item:first-child {
-      padding-left: 0;
-  }
-
-  .header-bottom__item:nth-child(3) {
-    padding-left: 100px;
-}
-
-.header-bottom__item:nth-child(4) {
-    padding-left: 106px;
-}
-
-  .header_bottom-item_icon {
+  /* .header_bottom-item_icon {
     margin-top: -2px;
     padding-left: 3px;
     text-align: center;
-  }
+  } */
 
   /* Скролл для нижнего меню */
 
@@ -268,7 +246,7 @@ ul {
     display: block;
     position: absolute;
     z-index: 10;
-    left: 160px;
+    left: 133px;
     top: 473px;
     bottom: 0;
     width: 300px;
@@ -285,7 +263,7 @@ ul {
     display: block;
     position: absolute;
     z-index: 9;
-    left: 339px;
+    left: 312px;
     top: 473px;
     bottom: 0;
     width: 300px;
@@ -302,7 +280,7 @@ ul {
     display: block;
     position: absolute;
     z-index: 8;
-    left: 589px;
+    left: 562px;
     top: 473px;
     bottom: 0;
     width: 300px;
@@ -319,7 +297,7 @@ ul {
     display: block;
     position: absolute;
     z-index: 7;
-    left: 890px;
+    left: 863px;
     top: 473px;
     bottom: 0;
     width: 300px;
@@ -336,7 +314,7 @@ ul {
     display: block;
     position: absolute;
     z-index: 6;
-    left: 1094px;
+    left: 1067px;
     top: 473px;
     bottom: 0;
     width: 300px;
@@ -713,11 +691,6 @@ ul {
     filter: grayscale(1);
 }
 
-
-  /* #form-search {
-    border: 1px solid white;
-  } */
-
   form:focus {
     border: 2px solid #7943A4;
   }
@@ -726,11 +699,16 @@ ul {
     border: 2px solid #7943A4;
   }
 
+  #seach {
+    display: flex;
+    justify-content: flex-end;
+    margin: 0;
+    padding: 0;
+  }
+
   .header-bottom__search {
-    position: absolute;
-    height: 34px;
-    width: 266px;
-    right: 127px;
+    position: relative;
+    max-width: 260px;
     margin-top: 23px;
     padding: 0 2px 4px 0;
     z-index: 2;
@@ -741,7 +719,7 @@ ul {
     width: 22px;
     height: 22px;
     top: 2px;
-    right: 237px;
+    right: 232px;
     background-repeat: no-repeat;
     background-position: center;
     border: none;
@@ -814,8 +792,9 @@ ul {
 
 
 .hero__animation {
-  max-width: 1920px;
+  max-width: 1630px;
   margin: 0 auto;
+  padding: 0 15px;
   overflow: hidden;
 }
 
@@ -826,20 +805,18 @@ ul {
 
 .hero__block {
   max-width: 100%;
-  margin: 0 auto;
-  padding: 0 15px;
   overflow: hidden;
 }
 
 .hero__image {
   max-width: 100%;
   position: absolute;
-  width: 1920px;
+  width: 1630px;
   height: 700px;
   top: 100px;
-  left: 0;
+  left: 133px;
   background: url(../img/birmingham-museums-trust-MK_98NuC4-4-unsplash2.png) center no-repeat;
-  animation: anim 25s ease-in-out;
+  animation: anim 15s ease-in-out;
 }
 
 /* .hero-animation_image:hover {
@@ -847,7 +824,7 @@ ul {
 } */
 
 .hero__text-container {
-max-width: 1920px;
+max-width: 1630px;
 position: relative;
 margin: 0 auto;
 padding: 26px 15px 120px 15px;
@@ -872,7 +849,7 @@ color: #FFFFFF;
     } */
 
     60% {
-      margin-left: -95px;
+      margin-left: -82px;
       margin-top: 35px;
         transform: scale(1.1);
     }
@@ -884,8 +861,9 @@ color: #FFFFFF;
 }
 
 h1 {
-    width: 30%;
-    margin-left: 144px;
+    width: 37%;
+    margin-left: -6px;
+    margin-bottom: 18px;
     font-weight: 700;
     font-size: 72px;
     line-height: 115%;
@@ -893,18 +871,12 @@ h1 {
 }
 
 .hero__discr{
-    width: 33%;
-    margin-left: 145px;
-    margin-top: -30px;
+    width: 37%;
     margin-bottom: 92px;
     font-weight: 700;
     font-size: 18px;
     line-height: 30px;
     letter-spacing: 0.6px;
-}
-
-.hero__btn {
-    margin-left: 148px;
 }
 
 .hero__btn:focus {
