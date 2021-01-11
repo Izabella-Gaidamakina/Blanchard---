@@ -1,7 +1,7 @@
 @font-face {
     font-family: 'Open_sans';
-    src: url('fonts/opensans-light-webfont.woff2') format('woff2'),
-         url('fonts/opensans-light-webfont.woff') format('woff');
+    src: url('../fonts/opensans-light-webfont.woff2') format('woff2'),
+         url('../fonts/opensans-light-webfont.woff') format('woff');
     font-weight: 300;
     font-style: normal;
 
@@ -9,8 +9,8 @@
 
 @font-face {
     font-family: 'Open_sans';
-    src: url('/fonts/opensans-regular-webfont.woff2') format('woff2'),
-         url('fonts/opensans-regular-webfont.woff') format('woff');
+    src: url('../fonts/opensans-regular-webfont.woff2') format('woff2'),
+         url('../fonts/opensans-regular-webfont.woff') format('woff');
     font-weight: 400;
     font-style: normal;
 
@@ -18,8 +18,8 @@
 
 @font-face {
     font-family: 'Open_sans';
-    src: url('fonts/opensans-semibold-webfont.woff2') format('woff2'),
-         url('fonts/opensans-semibold-webfont.woff') format('woff');
+    src: url('../fonts/opensans-semibold-webfont.woff2') format('woff2'),
+         url('../fonts/opensans-semibold-webfont.woff') format('woff');
     font-weight: 600;
     font-style: normal;
 
@@ -27,8 +27,8 @@
 
 @font-face {
     font-family: 'Open_sans';
-    src: url('fonts/opensans-bold-webfont.woff2') format('woff2'),
-         url('fonts/opensans-bold-webfont.woff') format('woff');
+    src: url('../fonts/opensans-bold-webfont.woff2') format('woff2'),
+         url('../fonts/opensans-bold-webfont.woff') format('woff');
     font-weight: 700;
     font-style: normal;
 
@@ -131,7 +131,7 @@ ul {
   }
 
   .header-top__menu{
-    padding: 37px 265px 0 0;
+    padding: 37px 255px 0 0;
     display: flex;
     justify-content: space-between;
     font-weight: 600;
@@ -192,7 +192,7 @@ ul {
   .header-bottom__list {
     display: flex;
     justify-content: flex-start;
-    padding: 23px 285px 22px 27px;
+    padding: 23px 240px 22px 27px;
     margin-left: -2px;
     font-size: 18px;
     line-height: 25px;
@@ -201,8 +201,16 @@ ul {
   }
 
   .header-bottom__item:not(:last-child) {
-    margin-right: 90px;
-    letter-spacing: 1px;
+    margin-right: 85px;
+    letter-spacing: 1.2px;
+  }
+
+  .header-bottom__item:nth-child(2) {
+    margin-right: 79px;
+  }
+
+  .header-bottom__item:nth-child(3) {
+    margin-right: 77px;
   }
 
   .header-bottom__item a:hover {
@@ -867,7 +875,6 @@ h1 {
     font-weight: 700;
     font-size: 72px;
     line-height: 115%;
-    letter-spacing: 2.7px;
 }
 
 .hero__discr{
@@ -876,7 +883,7 @@ h1 {
     font-weight: 700;
     font-size: 18px;
     line-height: 30px;
-    letter-spacing: 0.6px;
+    
 }
 
 .hero__btn:focus {
