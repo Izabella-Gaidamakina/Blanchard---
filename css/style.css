@@ -101,6 +101,12 @@ ul {
     list-style: none;
   }
 
+  .container {
+    margin: 0 auto;
+    padding: 0 15px;
+    max-width: 1630px;
+  }
+
 .btn {
     flex-direction: row;
     align-items: flex-start;
@@ -116,24 +122,42 @@ ul {
     background-color: #9D5CD0;
 }
 
+.header {
+  position: absolute;
+  left: 0;
+  top: 0;
+  z-index: 5;
+  width: 100%;
+}
+
   .header-top{
-    max-width: 1630px;
     display: flex;
     justify-content: right;
-    margin: 0 auto;
-    padding: 0 15px;
-    background: #000000;
+    padding-top: 30px;
+    padding-bottom: 27px;
+  }
+
+  .header-top::before {
+  content: '';
+  position: absolute;
+  width: 100%;
+  height: 100px;
+  left: 0;
+  right: 0;
+  top: 0;
+  background-color: rgba(0, 0, 0);
   }
 
   .header-top__logo {
-    padding: 30px 179px 27px 10px;
-    /* margin-right: 179px; */
+    margin-left: 12px;
+    padding-right: 179px;
+    z-index: 1;
   }
 
   .header-top__menu{
-    padding: 37px 255px 0 0;
     display: flex;
     justify-content: space-between;
+    padding-right: 279px;
     font-weight: 600;
     font-size: 18px;
     line-height: 25px;
@@ -141,20 +165,23 @@ ul {
   }
 
   .header-top__list {
+    padding-top: 7px;
     display: flex;
     justify-content: space-between;
     text-align: center;
+    z-index: 1;
   }
 
   .header-top__item:not(:last-child) {
-    margin-right: 64px;
+    margin-right: 62px;
   }
 
 .header-top__entrance {
+  padding-top: 7px;
   display: flex;
   justify-content: flex-end;
-  padding-top: 37px;
-  margin: 0;
+  margin-right: -15px;
+  z-index: 1;
 }
 
 .header-top__entr-link:hover path {
@@ -173,17 +200,15 @@ ul {
     max-width: 1630px;
     display: flex;
     justify-content: space-between;
-    margin: 0 auto;
-    /* padding: 0 15px; */
-    background-color: rgba(255,255,255,0.4);
   }
 
   .header-bottom::before {
     content: '';
     position: absolute;
-    width: 1630px;
+    width: 100%;
     height: 70px;
-    right: auto;
+    left: 0;
+    right: 0;
     top: 100px;
     background-color: rgba(0, 0, 0, 0.4);
     z-index: 1;
@@ -192,7 +217,7 @@ ul {
   .header-bottom__list {
     display: flex;
     justify-content: flex-start;
-    padding: 23px 240px 22px 27px;
+    padding: 23px 294px 22px 12px;
     margin-left: -2px;
     font-size: 18px;
     line-height: 25px;
@@ -678,7 +703,6 @@ ul {
   background: linear-gradient(0deg, rgba(194, 131, 243, 0.4), rgba(194, 131, 243, 0.4)), url(../img/desktop1920/link5-item2.png);
 }
 
-
 .header-bottom__scrollbar-item:focus,
 .header-bottom__scrollbar1-item:focus,
 .header-bottom__scrollbar2-item:focus,
@@ -710,14 +734,15 @@ ul {
   #seach {
     display: flex;
     justify-content: flex-end;
-    margin: 0;
+    margin-right: 0;
     padding: 0;
   }
 
   .header-bottom__search {
     position: relative;
     max-width: 260px;
-    margin-top: 23px;
+    margin-right: -15px;
+    margin-top: 24px;
     padding: 0 2px 4px 0;
     z-index: 2;
   }
@@ -739,7 +764,7 @@ ul {
 .header-bottom__search input {
     margin-right: 134px;
     margin-left: 37px;
-    padding: 3px 26px 4px 0px;
+    padding: 3px 47px 4px 0px;
     color: #FFFFFF;
     background:  none;
     border-right: none;
@@ -798,11 +823,12 @@ ul {
   }
 /* Body */
 
+.hero {
+  position: relative;
+  height: 800px;
+}
 
 .hero__animation {
-  max-width: 1630px;
-  margin: 0 auto;
-  padding: 0 15px;
   overflow: hidden;
 }
 
@@ -812,18 +838,16 @@ ul {
 } */
 
 .hero__block {
-  max-width: 100%;
   overflow: hidden;
 }
 
 .hero__image {
-  max-width: 100%;
   position: absolute;
-  width: 1630px;
-  height: 700px;
-  top: 100px;
-  left: 133px;
-  background: url(../img/birmingham-museums-trust-MK_98NuC4-4-unsplash2.png) center no-repeat;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  background: url(../img/desktop1920/hero-img15x.jpg) center no-repeat;
   animation: anim 15s ease-in-out;
 }
 
@@ -832,10 +856,8 @@ ul {
 } */
 
 .hero__text-container {
-max-width: 1630px;
 position: relative;
-margin: 0 auto;
-padding: 26px 15px 120px 15px;
+padding: 196px 15px 120px 15px;
 color: #FFFFFF;
 }
 
@@ -857,7 +879,7 @@ color: #FFFFFF;
     } */
 
     60% {
-      margin-left: -82px;
+      margin-left: -97px;
       margin-top: 35px;
         transform: scale(1.1);
     }
@@ -920,7 +942,7 @@ h1 {
 
 .us__container-back {
   position: absolute;
-  width: 1895px;
+  width: 100%;
   height: 93px;
   background: #FFFFFF;
   z-index: 1;
