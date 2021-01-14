@@ -846,8 +846,8 @@ ul {
 }
 
 .hero__image:hover {
-  transform: scale(1.1, 1.1) translateX(-79px); 
-  transition-duration: 5s;
+  transform: scale(1.1, 1.1) translateX(-91px); 
+  transition-duration: 10s;
   transition-timing-function: ease-in-out;
 }
 
