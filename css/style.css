@@ -557,13 +557,14 @@ ul {
     background: #000000;
 }
 
+
+
   .simplebar-scrollbar::before,
   .simplebar-scrollbar1::before,
   .simplebar-scrollbar2::before,
   .simplebar-scrollbar3::before,
   .simplebar-scrollbar4::before {
     width: 3px;
-    height: 28px;
     /* margin-right: 19px; */
     left: 0;
     right: -25px;
@@ -935,11 +936,11 @@ ul {
   } */
 
   .header-bottom__btn {
-    position: absolute;
+    position: relative;
     width: 22px;
     height: 20px;
-    top: 3px;
-    right: 227px;
+    top: -27px;
+    right: -13px;
     background-repeat: no-repeat;
     background-position: center;
     border: none;
@@ -1125,8 +1126,8 @@ ul {
 }
 
 .hero__btn {
-  transition: .5s;
   z-index: 10;
+  transition: border .5s;
 }
 
 .hero__btn:focus {
@@ -1140,7 +1141,11 @@ ul {
 .hero__btn:active {
   background-color: #7943A4;
   border-color:#D1A9F0;
- 
+  transition: .5s;
+}
+
+.hero__btn:not(:active) {
+  transition: .5s;
 }
 
 .hero__btn a:hover {

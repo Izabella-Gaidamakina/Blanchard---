@@ -87,3 +87,5 @@ document.addEventListener('click', (e) => {
 document.querySelectorAll('.simplebar-content-wrapper').forEach(el => {
 	console.log(el.style.height);
 });
+
+
