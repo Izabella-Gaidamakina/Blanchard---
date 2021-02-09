@@ -1127,7 +1127,6 @@ ul {
 
 .hero__btn {
   z-index: 10;
-  transition: border .5s;
 }
 
 .hero__btn:focus {
@@ -1136,6 +1135,11 @@ ul {
 
 .hero__btn:hover {
   border-color:#D1A9F0;  
+  transition: .5s;
+}
+
+.hero__btn:not(:hover) {
+  transition: .5s;
 }
 
 .hero__btn:active {
