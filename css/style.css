@@ -72,6 +72,7 @@ h2 {
 }
 
 a {
+    font-family: var(--font-family);
     text-decoration: none;
     color: inherit;
     border: 2px solid rgba(0, 0, 0, 0);
@@ -117,6 +118,7 @@ a {
   }
 
   .btn-reset {
+  font-family: var(--font-family);
 	border: none;
 	padding: 0;
 	background-color: transparent;
@@ -144,11 +146,13 @@ ul {
     font-weight: 700;
     font-size: 18px;
     line-height: 25px;
+    font-family: var(--font-family);
     text-align: center;
     color: #FFFFFF;
     background-color: #9D5CD0;
     border: 3px solid rgba(0, 0, 0, 0);
     outline: none;
+    cursor: pointer;
 }
 
 .header {
@@ -202,7 +206,7 @@ ul {
   }
 
   .header-top__item:not(:last-child) {
-    margin-right: 56px;
+    margin-right: 57.5px;
   }
 
 /* .header-top__entrance {
@@ -490,7 +494,7 @@ ul {
 	font-weight: 400;
 	font-size: 18px;
 	line-height: 25px;
-	font-family: 'Open Sans', sans-serif;
+	font-family: var(--font-family);
   color: #FFFFFF;
   padding: 0 16px 0 0;
   border: 2px solid rgba(0, 0, 0, 0);
@@ -543,7 +547,7 @@ ul {
 .bottom-list__item2:not(:last-child),
 .bottom-list__item3:not(:last-child),
 .bottom-list__item4:not(:last-child) {
-  margin-right: 97px;
+  margin-right: 99px;
 }
 
 .dropdown-list__item:not(:last-child),
@@ -584,6 +588,7 @@ ul {
 .bottom-list__item2.active .bottom-list__btn svg,
 .bottom-list__item3.active .bottom-list__btn svg,
 .bottom-list__item4.active .bottom-list__btn svg {
+  font-family: var(--font-family);
 	top: 9px;
 	transform: rotate(180deg);
 }
@@ -990,6 +995,7 @@ ul {
     height: 20px;
     top: -27px;
     right: -13px;
+    font-family: var(--font-family);
     background-repeat: no-repeat;
     background-position: center;
     border: none;
